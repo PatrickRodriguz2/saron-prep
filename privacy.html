@@ -34,9 +34,9 @@
 <body>
 <main>
 
-  <p class="eyebrow">SARON Prep for iOS</p>
+  <p class="eyebrow">SARON Prep · iPhone, iPad &amp; Mac</p>
   <h1>Privacy Policy</h1>
-  <p class="lede">SARON Prep does not collect, transmit, or store any personal information. There is no account, no analytics, and no network connection of any kind.</p>
+  <p class="lede">SARON Prep does not collect any personal information. There is no account, no analytics, and no developer server. The only network traffic is Apple's: if you leave iCloud sync on, your own iCloud account carrying your progress between your devices, and the App Store handling the optional Full Access purchase.</p>
 
   <hr>
 
@@ -48,12 +48,18 @@
   <ul>
     <li>which questions you have answered and whether you answered them correctly,</li>
     <li>the spaced-review schedule built from those answers,</li>
-    <li>your mock exam results and timings.</li>
+    <li>your mock exam results and timings, and a tally of the generated calculation drills you have answered,</li>
+    <li>a count of the free practice questions and free mock exams you have used.</li>
   </ul>
-  <p>All of it is written to a single file inside the app's own storage on your device. It never leaves the device, it is not backed up to any server belonging to the developer, and the developer cannot see it. You can erase it at any time with "Reset all progress" in the Library tab, and deleting the app deletes it too.</p>
+  <p>All of it is written to files inside the app's own storage on your device &mdash; on a Mac, inside the app's sandbox container. It is never sent to any server belonging to the developer, and the developer cannot see it.</p>
+
+  <h2>iCloud sync</h2>
+  <p>With iCloud sync on (Library &rsaquo; Sync, on unless you turn it off), each of your devices also keeps a copy of its own progress in the private database of <em>your</em> iCloud account, through Apple's CloudKit, so your iPhone, iPad and Mac can combine their progress. The copy includes the count of free practice questions and free mock exams used, so the free allowance is shared by your own devices. Only devices signed in to your Apple Account can read that copy; the developer has no access to it, and it counts towards your own iCloud storage (a few tens of kilobytes per device). Turn sync off in the Library to keep progress on one device only. To delete the iCloud copy, use Settings &rsaquo; your name &rsaquo; iCloud &rsaquo; Storage &rsaquo; SARON Prep on an iPhone or iPad.</p>
+  <p>You can erase your progress at any time with "Reset all progress" in the Library tab &mdash; with sync on, on every device signed in to your iCloud account. Deleting the app deletes the copy on that device.</p>
 
   <h2>Network access</h2>
-  <p>The app makes no network requests. Every question, explanation and study note is bundled inside the app, the practice flight plans and calculations are generated on the device, and everything works entirely offline. There is no server component.</p>
+  <p>The app itself contacts no server belonging to the developer. Every question, explanation and study note is bundled inside the app, the practice load sheets and calculations are generated on the device, and everything works entirely offline. There is no server component.</p>
+  <p>The optional Full Access purchase is handled entirely by Apple through the App Store (StoreKit): Apple processes the payment and tells the app on your device whether the purchase exists, and Apple's own sheet checks any offer code you redeem. The developer receives no personal or payment information.</p>
 
   <h2>Children</h2>
   <p>SARON Prep is a study aid for airline transport pilot licence candidates and is rated 4+. Since it collects no data from anyone, it collects no data from children.</p>
@@ -67,7 +73,7 @@
   <hr>
 
   <footer>
-    <p>Effective 11 September 2026 · SARON Prep is independent work by P. Rodrigues, Class 3 Flight Instructor. It is not affiliated with, endorsed by, or a publication of Transport Canada; the examination name is referenced solely to identify the exam the app prepares candidates for.</p>
+    <p>Effective 4 October 2026 · SARON Prep is independent work by P. Rodrigues, Class 3 Flight Instructor. It is not affiliated with, endorsed by, or a publication of Transport Canada; the examination name is referenced solely to identify the exam the app prepares candidates for.</p>
   </footer>
 
 </main>
